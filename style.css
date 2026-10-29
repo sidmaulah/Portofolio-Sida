@@ -219,3 +219,23 @@ dialog p { color: var(--muted); margin-bottom: 20px; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+/* Perbaikan tampilan responsif */
+.grid {
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 280px), 1fr)
+  );
+}
+
+.portrait img,
+.photo-card img {
+  max-width: 100%;
+}
+
+.project-actions {
+  flex-wrap: wrap;
+}
+
+.project-actions .btn {
+  min-width: 0;
+}
