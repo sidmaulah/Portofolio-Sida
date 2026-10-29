@@ -5,13 +5,13 @@
   const projects = [
     {
       cat: 'excel',
+      image: 'Database Pegawai & Simulasi Payroll.jpg',
       title: { id: 'Database Pegawai & Simulasi Payroll', en: 'Employee Database & Payroll Simulation' },
       desc: {
         id: 'Perhitungan gaji dengan PPh 21 Tarif Efektif Rata-Rata (TER), tunjangan jabatan, dan slip gaji otomatis.',
         en: 'Payroll calculation with PPh 21 average effective rates (TER), position allowances, and automatic payslips.'
       },
       tags: ['Nested IF', 'VLOOKUP', 'Payslip'],
-      preview: '<b>SIMULASI_PAYROLL.XLSX</b>\nGAJI_POKOK      6.500.000\nTUNJ_JABATAN    1.200.000\nPPH21_TER        -192.500\n<b>TAKE_HOME      7.507.500</b>\n=IF(E4="A",VLOOKUP(G4,TER,3,TRUE)*G4,0)',
       spec: {
         id: 'Workbook multi-sheet: Master Pegawai, Komponen Gaji, Tabel TER, dan slip gaji siap cetak (PDF).',
         en: 'Multi-sheet workbook: employee master, salary components, TER table, and print-ready payslips (PDF).'
@@ -23,13 +23,13 @@
     },
     {
       cat: 'excel',
+      imagr: '	Pelacak Absensi & Jadwal Kerja.jpg',
       title: { id: 'Pelacak Absensi & Jadwal Kerja', en: 'Attendance & Work Schedule Tracker' },
       desc: {
         id: 'Matriks shift dinamis, validasi ketidakhadiran, rekap lembur bulanan, dan conditional formatting.',
         en: 'Dynamic shift matrix, absence validation, monthly overtime summary, and conditional formatting.'
       },
       tags: ['Conditional Formatting', 'Pivot Table', 'Time Math'],
-      preview: '<b>ATTENDANCE_MATRIX.XLSX</b>\nSen  Sel  Rab  Kam  Jum  Sab  Min\n H    H    H    H    H    L   OFF\n\nTOTAL_LEMBUR : 14,5 jam',
       spec: {
         id: 'Workbook jadwal untuk banyak staf dengan shift bergilir; menghitung denda terlambat dan lembur otomatis.',
         en: 'Roster workbook for many staff on rolling shifts; automatically computes late penalties and overtime.'
@@ -41,13 +41,13 @@
     },
     {
       cat: 'excel',
+      image: '	Pembukuan Operasional & HPP.jpg',
       title: { id: 'Pembukuan Operasional & HPP', en: 'Operational Bookkeeping & Cost Analysis' },
       desc: {
         id: 'Perhitungan HPP menu katering, proyeksi margin, dan pencatatan arus kas harian untuk Mrs. Sid Catering.',
         en: 'Catering menu cost (HPP) calculation, margin projection, and daily cash flow records for Mrs. Sid Catering.'
       },
       tags: ['HPP', 'Stok', 'Jurnal Kas'],
-      preview: '<b>MRS_SID_HPP.XLSX</b>\nMENU        Nasi Kotak Premium B\nBAHAN BAKU  14.850\nKEMASAN     3.650\n<b>HPP / PORSI  18.500</b>',
       spec: {
         id: 'Workbook katering yang dipakai harian: pembelian dapur, selisih porsi bahan, dan invoice pelanggan.',
         en: 'Catering workbook used daily: kitchen purchases, ingredient portion variance, and client invoices.'
@@ -59,13 +59,13 @@
     },
     {
       cat: 'edu',
+      image: 'Lembar Kerja Siswa.jpg',
       title: { id: 'Lembar Kerja Siswa Terstruktur', en: 'Structured Student Worksheets' },
       desc: {
         id: 'Modul lembar kerja SD berlayout rapi, panduan bertahap, dan rubrik penilaian.',
         en: 'Elementary worksheet modules with clear layout, step-by-step guidance, and assessment rubrics.'
       },
       tags: ['Layout', 'Rubrik', 'Kurikulum Merdeka'],
-      preview: '<b>STEM_MODULE_04</b>\nLembar Aktivitas Ekosistem\nTingkat SD • 45 halaman\nKunci jawaban + rubrik',
       spec: {
         id: 'Lembar belajar siap cetak dengan hierarki huruf jelas, ruang diagram, dan penilaian mandiri.',
         en: 'Print-ready learning sheets with clear type hierarchy, diagram space, and self-assessment.'
@@ -77,27 +77,26 @@
     },
     {
       cat: 'edu',
+      image: '	Redesain Dokumen Korporat_ Before dan After.jpg',
       title: { id: 'Redesain Lembar Kerja: Sebelum & Sesudah', en: 'Worksheet Redesign: Before & After' },
       desc: {
-        id: 'Menata ulang hierarki teks dan instruksi agar lebih mudah dibaca dan diikuti siswa.',
-        en: 'Restructuring text hierarchy and instructions so students can read and follow them more easily.'
+        id: 'Perbaikan tata letak dan hierarki informasi agar dokumen lebih rapi, konsisten, dan profesional.',
+        en: 'Fixing the layout and information hierarchy so the document looks neater, more consistent, and professional.'
       },
       tags: ['Hierarki Visual', 'Canva', 'Word'],
-      preview: '<b>SEBELUM</b>  teks padat, tanpa grid\n<b>SESUDAH</b>  spasi lega, huruf berjenjang,\n          instruksi satu langkah',
-      spec: {
-        id: 'Studi perbandingan desain yang mengurangi kepadatan visual untuk siswa sekolah dasar.',
-        en: 'Side-by-side design study reducing visual clutter for elementary students.'
+        id: 'Penyederhanaan susunan informasi dan instruksi agar formulir lebih mudah dipahami dan digunakan.',
+        en: 'Simplifying the arrangement of information and instructions so the form is easier to understand and use.'
       }
     },
     {
       cat: 'doc',
+      image: 'Redesain Dokumen Korporat_ Before dan After.jpg',
       title: { id: 'Penyuntingan Naskah & Dokumen Resmi', en: 'Manuscript Editing & Official Documents' },
       desc: {
         id: 'Standar tata naskah, layout laporan operasional, dan materi publikasi yang konsisten.',
         en: 'Document standards, operational report layouts, and consistent publication materials.'
       },
       tags: ['Proofreading', 'Kop Surat', 'Canva'],
-      preview: '<b>EDITORIAL_STANDARDS</b>\n• Audit sitasi APA 7\n• Kop surat & tipografi\n• Ekspor siap cetak',
       spec: {
         id: 'Template, sistem kop surat, dan panduan gaya penulisan untuk dokumen lembaga.',
         en: 'Templates, letterhead systems, and writing style guidelines for organization documents.'
@@ -109,13 +108,13 @@
     },
     {
       cat: 'doc',
-      title: { id: 'Pembuatan Web Sekolah — SDN Tempeh Lor 01', en: 'School Website Development — SDN Tempeh Lor 01' },
+      image: 'Pembuatan Web Sekolah.jpg',
+      title: { id: 'Pembuatan Web', en: 'Website Development' },
       desc: {
         id: 'Perancangan dan pengelolaan situs web profil sekolah sebagai pusat informasi akademik, kegiatan siswa, dan publikasi profil lembaga.',
         en: 'Design and maintenance of the official school profile website as an academic information hub, student activities, and institutional publications.'
       },
       tags: ['Blogger', 'Web Design', 'Publikasi Digital'],
-      preview: '<b>SDNEGERITEMPEHLOR01.BLOGSPOT.COM</b>\n• Profil Sekolah & Visi Misi\n• Informasi Akademik & Siswa\n• Dokumentasi Kegiatan & Prestasi\n<b>STATUS: AKTIF & TERPUBLIKASI</b>',
       spec: {
         id: 'Pengembangan website profil SDN Tempeh Lor 01 untuk mendigitalkan informasi sekolah, pengumuman kegiatan, dan sarana transparansi informasi bagi wali murid serta masyarakat.',
         en: 'Development of SDN Tempeh Lor 01 profile website to digitize school information, event announcements, and public transparency for parents and the community.'
